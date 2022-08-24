@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css/08/boxmodel.html</title>
+    <style>
+        div.box1{
+            display: inline-block;
+            width: 300px;
+            border-width: 2px;
+            border-color: red;
+            border-style: solid;
+            /*border: 2px red solid;*/
+            padding-top: 20px;
+            padding-right: 15px;
+            padding-left: 10px;
+            padding-bottom: 15px;
+            /*padding: 20px (right)15px (left)15px 10px;*/
+            margin: 30px 25px; /*top,bottom 30px, left,right:25px*/
+        }
+
+        div.box2 {
+            display: inline;
+            width: 300px;
+            border: 5px solid red;
+            padding: 10px;
+            margin: 15px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Quasi commodi provident ad, 
+        inventore beatae, tempore porro quod sint itaque 
+        repellendus ea harum ex possimus eligendi quisquam 
+        dolorem aliquam soluta mollitia?
+    </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Quasi commodi provident ad, 
+        inventore beatae, tempore porro quod sint itaque 
+        repellendus ea harum ex possimus eligendi quisquam 
+        dolorem aliquam soluta mollitia?
+    </div>
+    
+</body>
+</html>
