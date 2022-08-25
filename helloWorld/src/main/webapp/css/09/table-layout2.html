@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Covid</title>
+	<style>
+		table {
+			margin-top: 10px;
+			border-top: 2px solid gray;
+			width: 85%;
+			height: 200px;
+			border-collapse: collapse;
+		}
+
+		.day,
+		th {
+			background-color: rgb(225, 225, 238);
+		}
+
+		th,
+		td {
+			border: 1px solid gray;
+		}
+
+		td {
+			text-align: right;
+			padding-right: 10px;
+		}
+
+		.title {
+			margin-bottom: 10px;
+			text-align: left;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		tbody>td,
+		th {
+			padding: 10px;
+		}
+
+		.sum,
+		#sum {
+			background-color: rgb(213, 225, 247);
+			font-weight: bold;
+		}
+
+
+		p {
+			font-size: small;
+		}
+
+		#A {
+			background-color: #0056af;
+			display: inline-block;
+			margin: 1px 1px;
+			vertical-align: middle;
+			width: auto;
+			min-width: 22px;
+			height: auto;
+			min-height: 22px;
+			font-size: 13px;
+			line-height: 21px;
+			font-weight: 500;
+			color: #fff;
+			text-align: center;
+			border-radius: 100%;
+
+		}
+
+		#B {
+			background-color: #dc4c14;
+			display: inline-block;
+			margin: 1px 1px;
+			vertical-align: middle;
+			width: auto;
+			min-width: 22px;
+			height: auto;
+			min-height: 22px;
+			font-size: 13px;
+			line-height: 21px;
+			font-weight: 500;
+			color: #fff;
+			text-align: center;
+			border-radius: 100%;
+
+		}
+
+		.sum>td {
+			border-bottom: 2px dotted rgb(148, 134, 182);
+		}
+	</style>
+</head>
+
+<body>
+	<h2>시도별 일일 접종 현황</h2>
+	<hr>
+	<table>
+		<thead>
+			<tr>
+				<caption class="title">접종실적 총괄</caption>
+				<th>구분</th>
+				<th>1차접종</th>
+				<th>2차접종</th>
+				<th>3차접종</th>
+				<th>4차접종</th>
+			</tr>
+		<tbody>
+			<tr>
+				<th>당일 누적 <span id="A">A</span>+<span id="B">B</span></th>
+				<td>45,101,931</td>
+				<td>44,664,114</td>
+				<td>33,539,624</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>당일 실적 <span id="A">A</span></th>
+				<td>380</td>
+				<td>336</td>
+				<td>2,305</td>
+				<td>32,088</td>
+			</tr>
+			<tr>
+				<th>전일 누적 <span id="B">B</span></th>
+				<td>45,101,551</td>
+				<td>44,663,778</td>
+				<td>33,537,319</td>
+				<td>6,968,118</td>
+			</tr>
+		</tbody>
+	</table>
+	</thead>
+
+	<table>
+		<thead>
+			<tr>
+				<caption class="title">시도별 접종 현황</caption>
+				<th rowspan="2">구분</th>
+				<th colspan="2">1차접종</th>
+				<th colspan="2">2차접종</th>
+				<th colspan="2">3차접종</th>
+				<th colspan="2">4차접종</th>
+			</tr>
+			<tr class="day">
+				<td>당일 실적</td>
+				<td>당일 누계</td>
+				<td>당일 실적</td>
+				<td>당일 누계</td>
+				<td>당일 실적</td>
+				<td>당일 누계</td>
+				<td>당일 실적</td>
+				<td>당일 누계</td>
+			</tr>
+		<tbody>
+			<tr class="sum">
+				<th id="sum">합계</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>서울</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>부산</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>대구</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>인천</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>광주</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>대전</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>울산</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>세종</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>경기</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>강원</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>충북</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>충남</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>전북</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>전남</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>경북</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>경남</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+			<tr>
+				<th>제주</th>
+				<td>380</td>
+				<td>45,101,931</td>
+				<td>336</td>
+				<td>44,664,114</td>
+				<td>2,305</td>
+				<td>33,539,624</td>
+				<td>32,088</td>
+				<td>7,000,206</td>
+			</tr>
+		</tbody>
+	</table>
+	</thead>
+	<p> * 상기 통계자료는 예방접종등록에 따라 변동 가능한 잠정 통계임</p>
+</body>
+
+<hr>
+
+</html>

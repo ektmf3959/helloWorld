@@ -1,0 +1,80 @@
+header {
+    background-color: gray;
+    color: white;
+    background-size:cover;
+    border: 20px solid gray;
+    margin: -8px;
+    height: 70px;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    background-color: white;
+    border: 10px solid white;
+    margin-top: 20px;
+}
+
+h1 {
+    display: inline;
+    text-align: left;
+}
+
+nav {
+    text-align: right;
+    float: right;
+}
+
+h3:not(aside>h3) {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAAApVBMVEX///8AAACd6f/t7e38/Pzw8PDz8/P5+fmWlpbm5uZkZGTd3d3p6en29vZMTEyW6P9sbGzBwcGAgIBxcXEpKSnNzc2mpqZEREQwMDBVVVU2Nja0tLSQkJBfX18hISEJCQnr+v4WFhZf0Ms9PT2v7f7U9f7g+P6h8P97uspReoOQ1ObE8f6Dw9UcKC2X3vBMcXpsn6vC6+yC29ie3tvg8/K06eguxb+nbVogAAADWElEQVR4nO2aWXuaQBSGOcpORFlVFgGxNm2atlHT///TOiziEAGfmBm8Oe9NdAadj8PZZqIgIAiCIAiCIAiCIAiCIAiCjIW/XC9UTxtzyVB3VEs6v9Mg2SQAG90SxxIwg5I4PCuwZc3zc4ClN5oCR/L8BUBWriit8nL4yQZwlFEUKK5Z2HsaAajFewfkasJYQyANfJAdOlTrGCuwyR8frHpCjMB9GkNBBEb1YrYEv3SEZsqHYDaCghBqJxRmq0IMmJdVfTBHCAnjctMe6CJxBCoZOBDxVyBCTC3okfumwpA8GYO/BDCbqPPAEawqJmoMWPJXsKY83nWlKej0bFS4J2ccytAqeQRg0rPiCFlBpR68Re7YzZX2NHcj0K5nJJB8yENS4vJWEDZZkPh+5MT5pu3+NjXPB6tJSSWiPG1nIYMKVz6Et+4xBs5FspWCui/g7It6ciPtye0MwZ7b1edcwDlhXRUfMU3bAyrfaDCh3RinuzlhRzsf3TOwJ/zw7d/mk5L5nhqkihdzjAxabdB+8n1SQ3mHzq9Ga0GZjnz1LGP3/ONnbYSXy2U3A/ZuDChDXQVYVAPpL4DX35WE3cUIXqtnYIdMVi4TMtkbrKuh/TNAUhthkjZXPmVrDstrUQBuZdypmddW3s//vP6dXCkQAsb1MbTtBdmXJepVL54SRzy7IvUUhDibMlx/ZhYbxaXdmWV2ZwO0PJH0aixdMSq3qj3FJm0UTOjhsF3Bv0i1WQ56Zve1BWgvKIKBZXmsFKz6psusPHlpCaC3NcwUDH1jelUstQ3LPikoBOifq7dS3muzO3DAsrxPVhplDQwV+PdU+5ilAuOepmvBUoGQZ/2HdaLRfWyyYNovhwOVTnJdveshNcdLTJAD6D2cmakkVOLr1lUzmB6mWIO7ILJ3NAem2eAMJFlxDTnTKtCJkvWuIcZgy9x3ikX/3WMFySxi1fb5H6dqLiw6ErM/XDCYIunghm0NsrWEDXcPoPAzCCJjVkWZIns2adzsUf+xIEzV8lzfjiJbz4uX0Qhnhx/xojgr24XcUR+wfIkoTwnSGCfYCIIgCIIgCIIgCII8mLfDcZyfE/YLOBzeR/thZxeH7em0PT1Swfa4ff/3UAXK8bg9PlKAIJzeHmqBhv8SlCjiPs+pJwAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-size: 28px;
+}
+
+nav>ul>li {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav>ul>li>a {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+#pet1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 30px;
+}
+
+#pet2 {
+    border: 1px dotted black;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 30px;
+}
+
+#pet3 {
+    border: 1px solid black;
+    border-radius: 10px 0px 10px 0px;
+    margin: 10px;
+    padding-left: 30px;
+}
+
+aside {
+    padding-left: 30px;
+}
+
+dt {
+    color: red;
+}
+footer {
+    color: white;
+}
