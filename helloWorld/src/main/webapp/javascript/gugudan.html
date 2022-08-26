@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p>구구단</p>
+    <input type="text" id="gugu" style="height: 20px; width: 70px;"><button onclick="gugu1()"
+        style="height: 25px; margin-left: 10px;">곱하기</button>
+    <script>
+        function gugu1() {
+            let num = document.getElementById('gugu').value;
+            let gugudan = '';
+            if (num != "") {
+                document.write(num + '단<br>')
+                for (let i = 1; i < 10; i++) {
+                    document.write('<p>' + num + ' * ' + i + ' = ' + num * i + '</p>')
+                }
+                document.write('<button onclick="reload()">새로고침</button>')
+            } else {
+                alert("값을 넣으세요")
+            }
+        }
+
+        function reload() {
+            location.href = '';
+        }
+    </script>
+</body>
+</html>
