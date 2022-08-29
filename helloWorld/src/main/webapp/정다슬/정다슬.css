@@ -1,0 +1,144 @@
+div {
+    box-sizing: border-box;
+    font-family: 맑은고딕;
+}
+
+#container {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+
+#header{
+    text-align: center;
+}
+
+
+#header nav {
+    background-color: green;
+    width: 100%;
+    float: left;
+}
+
+#header nav ul {
+    list-style-type: none;
+}
+
+#header nav ul li {
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+
+
+#header nav ul li a {
+    text-decoration: none;
+
+}
+
+#header nav ul li a:hover {
+    color: #FF0;
+    background-color: pink;
+}
+
+#left-sidebar {
+    background-color: aquamarine;
+    width: 200px;
+    height: 700px;
+    float: left;
+    position: relative;
+
+
+}
+
+#left-sidebar>h2 {
+    text-align: center
+}
+
+#section {
+    float: left;
+    width: 600px;
+    height: 700px;
+
+}
+
+#section h2 {
+    text-align: center;
+}
+
+#section>form {
+    width: 500px;
+    height: 550px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+#section>form>fieldset>legend {
+    font-weight:  bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#section>form>fieldset>ul>li {
+    list-style-type: none;
+    background-color: antiquewhite;
+    border: black;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+#section>form>fieldset {
+    border: none;
+}
+
+#right-sidebar {
+    float: right;
+    background-color: aquamarine;
+    width: 200px;
+    height: 700px;
+    position: relative;
+    text-align: center
+
+}
+
+#right-sidebar>ul>p {
+    margin-left: 2%;
+
+}
+
+#footer {
+    background-color: rgb(214, 169, 255);
+    width: 100%;
+    clear: both;
+    padding: 2%;
+    text-align: center
+}
+    
+input {
+    display: inline-block;
+    width: 250px;
+    padding-left: 3px;
+}
+
+label {
+    width: 130px;
+}
+
+input[type=button] {
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ddd;
+    line-height: 15px;
+    margin: 20px 15px;
+    
+}
+
