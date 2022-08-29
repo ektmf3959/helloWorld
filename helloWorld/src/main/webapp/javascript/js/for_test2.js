@@ -14,8 +14,11 @@ let obj = {
     },
     friendList:function() {
         //친구의 이름을 콘솔 출력.
-        for(let i=0; i<friends.length; i++){
-            console.log(obj.friends[i].sname);
+        // for(let i=0; i<friends.length; i++){
+        //     console.log(obj.friends[i].friends);
+        // }
+        for(this.friends in obj) {
+            console.log(this.friends+ " : " + obj.friends.name);
         }
     }
 }
@@ -25,3 +28,5 @@ obj.addFriend({name:'Hwang', phone: '010-1111-2222'});
 
 console.log(obj.friends[2].phone);
 //console.log(obj.friends[2]['phone']);
+console.log(obj.friends[2].name);
+console.log(friendList);
