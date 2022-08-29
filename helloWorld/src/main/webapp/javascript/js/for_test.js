@@ -28,6 +28,7 @@ function outerFunc() {
         a = b;
     }
     console.log(a); // 1
+    console.log(b); // undefined
     a = 2;
     b = 4;
     innerFunc();
@@ -36,4 +37,4 @@ function outerFunc() {
     console.log(b); // 2
 }
 outerFunc();
-console.log(b); // 
+console.log(b); // 5
