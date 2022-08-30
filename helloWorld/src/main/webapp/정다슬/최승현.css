@@ -1,0 +1,147 @@
+body {
+    font-family: '맑은 고딕';
+}
+
+#container {
+    width: 1000px;
+    height: 803px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+#log {
+    float: right;
+    margin-right: 40px;
+}
+
+fieldset>li {
+    border: 1px dotted white;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin: 4px 0 4px 0;
+    height: 30px;
+    padding: 5px 20px 2px 0px;
+}
+
+header {
+    background-color: white;
+    margin-top: 50px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: pink;
+    color: black;
+}
+
+nav {
+    box-sizing: border-box;
+    height: 60px;
+    text-align: left;
+    background-color: black;
+    padding-top: 1px;
+    margin-bottom: -1px;
+
+}
+
+nav>ul>li {
+    display: inline;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav>ul>li>a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+form {
+    width: 500px;
+    text-align: center;
+    background-color: lightgray;
+    margin: auto;
+    padding: 10px 30px 10px 30px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    border: 0px;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+section {
+    text-align: center;
+    width: 600px;
+    height: 700px;
+    padding: auto;
+}
+
+fieldset {
+    margin: 5px;
+    border-radius: 10px;
+    background-color: lightgray;
+    border: 0px;
+}
+
+input {
+    float: right;
+}
+
+aside {
+    width: 200px;
+    height: 700px;
+    background-color: lightslategray;
+    text-align: center;
+}
+
+label {
+    width: 130px;
+}
+
+input {
+    width: 250px;
+    padding: 3px;
+}
+
+#lefta {
+    float: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+#righta {
+    float: right;
+}
+
+section {
+    text-align: center;
+    width: 700px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: -410px;
+    height: 70px;
+    text-align: center;
+    padding-top: 5px;
+}

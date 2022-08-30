@@ -8,25 +8,23 @@ arr.push(20);
 let obj = {
     sname: 'Hong',
     age: 20,
-    friends: ['Park'],
+    friends: [{sname:'Park'}],
     addFriend: function(friend) {
         this.friends.push(friend);
     },
-    friendList:function() {
-        //친구의 이름을 콘솔 출력.
-        // for(let i=0; i<friends.length; i++){
-        //     console.log(obj.friends[i].friends);
-        // }
-        for(this.friends in obj) {
-            console.log(this.friends+ " : " + obj.friends.name);
+    friendList : function(){
+        for(let i =0; i<obj.friends.length; i++){
+           console.log(obj.friends[i].sname)
+     
         }
-    }
+    }    
 }
 
-obj.addFriend('Kim');
-obj.addFriend({name:'Hwang', phone: '010-1111-2222'});
+obj.addFriend({sname: 'Kim'});
+obj.addFriend({sname:'Hwang', phone: '010-1111-2222'});
 
 console.log(obj.friends[2].phone);
 //console.log(obj.friends[2]['phone']);
-console.log(obj.friends[2].name);
-console.log(friendList);
+console.log(obj.friends[2].sname);
+
+obj.friendList();
