@@ -14,6 +14,7 @@ console.log('ABC'.toLowerCase()); // 소문자변환
 
 Date.prototype.hhmiss = function() {
     // 09:08:07, 12:34:07 으로 출력해주는 메소드
+    console.log(`${now.getHours()<10? '0'+now.getHours(): now.getHours()}:${now.getMinutes()<10? '0'+now.getMinutes(): now.getMinutes()}:${now.getSeconds()<10? '0'+now.getSeconds(): now.getSeconds()}`)
 }
 
 console.log(now.hhmiss());
